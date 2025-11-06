@@ -20,3 +20,9 @@ tasks.test {
 kotlin {
     jvmToolchain(23)
 }
+
+tasks.withType<org.jetbrains.dokka.gradle.DokkaTask>().configureEach {
+    dokkaSourceSets.configureEach {
+        samples.from("src/test/kotlin/samples")
+    }
+}

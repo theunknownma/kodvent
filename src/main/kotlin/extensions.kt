@@ -7,6 +7,9 @@
  * If the key already exists, its value will be increased by 1.
  *
  * @param key The key whose count should be incremented
+ *
+ * @sample samples.IncrementAndDecrementSamples.incrementBasicUsage
+ * @sample samples.IncrementAndDecrementSamples.incrementCountingWords
  */
 public fun <T> MutableMap<T, Int>.increment(key: T) {
     this[key] = (this[key] ?: 0) + 1
@@ -20,7 +23,11 @@ public fun <T> MutableMap<T, Int>.increment(key: T) {
  * If the key does not exist in the map, no changes are made.
  *
  * @param key The key whose count should be decremented
+ *
  * @return `true` if the key existed and was decremented or removed, `false` if the key was not found
+ *
+ * @sample samples.IncrementAndDecrementSamples.decrementBasicUsage
+ * @sample samples.IncrementAndDecrementSamples.decrementInventoryManagement
  */
 public fun <T> MutableMap<T, Int>.decrement(key: T): Boolean {
     val count = this[key] ?: return false
