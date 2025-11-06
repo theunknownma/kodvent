@@ -2,6 +2,7 @@
 
 [![GitHub license](https://img.shields.io/badge/license-Apache%20License%202.0-blue.svg?style=flat)](http://www.apache.org/licenses/LICENSE-2.0)
 [![Kotlin](https://img.shields.io/badge/kotlin-2.2.20-blue.svg?logo=kotlin)](http://kotlinlang.org)
+[![Maven Central](https://img.shields.io/maven-central/v/io.github.dmitrynekrasov/kodvent.svg?label=Maven%20Central)](https://central.sonatype.com/artifact/io.github.dmitrynekrasov/kodvent)
 
 ![kodvent](logo.jpg)
 
@@ -15,6 +16,36 @@ The library provides convenient extension functions for `MutableMap<T, Int>` to 
 
 - **`increment(key: T)`** - Increments the count for a key, initializing to 1 if the key doesn't exist
 - **`decrement(key: T): Boolean`** - Decrements the count for a key, removing it when count reaches 0
+
+## Installation
+
+Add the dependency to your project:
+
+### Gradle (Kotlin DSL)
+
+```kotlin
+dependencies {
+    implementation("io.github.dmitrynekrasov:kodvent:0.1.1")
+}
+```
+
+### Gradle (Groovy)
+
+```groovy
+dependencies {
+    implementation 'io.github.dmitrynekrasov:kodvent:0.1.1'
+}
+```
+
+### Maven
+
+```xml
+<dependency>
+    <groupId>io.github.dmitrynekrasov</groupId>
+    <artifactId>kodvent</artifactId>
+    <version>0.1.1</version>
+</dependency>
+```
 
 ## Usage
 
