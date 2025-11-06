@@ -1,7 +1,7 @@
 package samples
 
-import increment
-import decrement
+import me.scannorone.kodvent.decrement
+import me.scannorone.kodvent.increment
 import kotlin.test.Test
 import kotlin.test.assertEquals
 

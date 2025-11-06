@@ -1,3 +1,5 @@
+import me.scannorone.kodvent.decrement
+import me.scannorone.kodvent.increment
 import kotlin.test.Test
 import kotlin.test.assertEquals
 import kotlin.test.assertFalse
