@@ -18,6 +18,14 @@ The library provides convenient extension functions for `MutableMap<T, Int>` to 
 - **`increment(key: T)`** - Increments the count for a key, initializing to 1 if the key doesn't exist
 - **`decrement(key: T): Boolean`** - Decrements the count for a key, removing it when count reaches 0
 
+### Math Functions
+
+Common mathematical functions for number theory and algorithmic problems:
+
+- **`gcd(a: Int, b: Int): Int`** - Computes the greatest common divisor (GCD) of two integers using the Euclidean algorithm
+- **`lcm(a: Int, b: Int): Int`** - Computes the least common multiple (LCM) of two integers
+- Both functions are also available for `Long` parameters
+
 ## Installation
 
 Add the dependency to your project:
@@ -26,7 +34,7 @@ Add the dependency to your project:
 
 ```kotlin
 dependencies {
-    implementation("io.github.dmitrynekrasov:kodvent:0.1.1")
+    implementation("io.github.dmitrynekrasov:kodvent:0.1.2")
 }
 ```
 
@@ -34,7 +42,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'io.github.dmitrynekrasov:kodvent:0.1.1'
+    implementation 'io.github.dmitrynekrasov:kodvent:0.1.2'
 }
 ```
 
@@ -44,7 +52,7 @@ dependencies {
 <dependency>
     <groupId>io.github.dmitrynekrasov</groupId>
     <artifactId>kodvent</artifactId>
-    <version>0.1.1</version>
+    <version>0.1.2</version>
 </dependency>
 ```
 
@@ -61,6 +69,29 @@ val frequencies = mutableMapOf<Char, Int>()
 }
 
 // frequencies now contains: {h=1, e=1, l=3, o=2, w=1, r=1, d=1}
+```
+
+### Mathematical Computations
+
+```kotlin
+import kodvent.math.gcd
+import kodvent.math.lcm
+
+// Find the greatest common divisor
+val result1 = gcd(48, 18)  // 6
+
+// Simplify a fraction using GCD
+val numerator = 48
+val denominator = 180
+val divisor = gcd(numerator, denominator)
+val simplified = "${ numerator / divisor }/${ denominator / divisor }"  // "4/15"
+
+// Find the least common multiple
+val result2 = lcm(12, 18)  // 36
+
+// Solve a scheduling problem
+// Two buses arrive every 12 and 18 minutes
+val nextSimultaneousArrival = lcm(12, 18)  // 36 minutes
 ```
 
 ## Development
