@@ -11,6 +11,10 @@ package kodvent.math
  * @param b the second integer
  *
  * @return the greatest common divisor of [a] and [b]
+ *
+ * @sample samples.GcdAndLcmSamples.gcdBasicUsage
+ * @sample samples.GcdAndLcmSamples.gcdSimplifyingFractions
+ * @sample samples.GcdAndLcmSamples.gcdReducingRatios
  */
 public fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
@@ -25,6 +29,9 @@ public fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
  * @param b the second integer
  *
  * @return the least common multiple of [a] and [b]
+ *
+ * @sample samples.GcdAndLcmSamples.lcmBasicUsage
+ * @sample samples.GcdAndLcmSamples.lcmSchedulingProblem
  */
 public fun lcm(a: Int, b: Int): Int = a / gcd(a, b) * b
 
