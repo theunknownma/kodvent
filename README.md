@@ -35,8 +35,8 @@ An efficient data structure for managing disjoint sets with near-constant time o
 - **`find(x: Int): Int`** - Finds the representative (root) of the set containing element `x`
 - **`union(x: Int, y: Int): Boolean`** - Merges the sets containing `x` and `y`, returns `true` if merged
 - **`connected(x: Int, y: Int): Boolean`** - Checks if `x` and `y` are in the same set
-- **`count(): Int`** - Returns the number of disjoint sets
-- **`makeSet(x: Int)`** - Resets element `x` to be in its own singleton set
+- **`count: Int`** - The number of disjoint sets
+- **`isolate(x: Int)`** - Resets element `x` to be in its own singleton set
 
 The implementation uses path compression and union by rank optimizations for optimal performance.
 
@@ -48,7 +48,7 @@ Add the dependency to your project:
 
 ```kotlin
 dependencies {
-    implementation("io.github.dmitrynekrasov:kodvent:0.1.3")
+    implementation("io.github.dmitrynekrasov:kodvent:0.1.4")
 }
 ```
 
@@ -56,7 +56,7 @@ dependencies {
 
 ```groovy
 dependencies {
-    implementation 'io.github.dmitrynekrasov:kodvent:0.1.3'
+    implementation 'io.github.dmitrynekrasov:kodvent:0.1.4'
 }
 ```
 
@@ -66,7 +66,7 @@ dependencies {
 <dependency>
     <groupId>io.github.dmitrynekrasov</groupId>
     <artifactId>kodvent</artifactId>
-    <version>0.1.3</version>
+    <version>0.1.4</version>
 </dependency>
 ```
 
