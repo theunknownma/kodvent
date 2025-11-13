@@ -18,7 +18,7 @@ package kodvent.math
  * @sample samples.GcdAndLcmSamples.gcdSimplifyingFractions
  * @sample samples.GcdAndLcmSamples.gcdReducingRatios
  */
-public fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
+public tailrec fun gcd(a: Int, b: Int): Int = if (b == 0) a else gcd(b, a % b)
 
 /**
  * Computes the least common multiple (LCM) of two integers.
